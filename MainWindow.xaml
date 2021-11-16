@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:przykład"
         mc:Ignorable="d"
+
         Title="MainWindow" Height="800" Width="800">
-    <Grid>
+
 
 
         <GroupBox>
+
             <ScrollViewer Height="800">
+
                 <StackPanel Height="auto">
                     <Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">KONFIGURATOR</Label>
                     <Label FontSize="30" VerticalAlignment="Center">1. WYBÓR SILNIKA</Label>
@@ -34,17 +37,11 @@
                     <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
                     <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
                     <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
+
+
+                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">elektryczny</Label>
                     <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <Label FontSize="20" Content="elektryczny" Height="4" RenderTransformOrigin="0.5,0.5">
-                        <Label.RenderTransform>
-                            <TransformGroup>
-                                <ScaleTransform ScaleY="1"/>
-                                <SkewTransform/>
-                                <RotateTransform/>
-                                <TranslateTransform/>
-                            </TransformGroup>
-                        </Label.RenderTransform>
-                    </Label>
+
                     <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
                     <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
 
@@ -175,7 +172,9 @@
 
 
 
+
                     <Button Content="Zamawiam" Width="70" Height="70" Margin="10" Click="Button_Click"/>
+
 
                 </StackPanel>
             </ScrollViewer>
