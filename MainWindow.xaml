@@ -5,12 +5,15 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:przykład"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1500" Width="800">
-    <Grid>
+
+        Title="MainWindow" Height="800" Width="800">
+
 
 
         <GroupBox>
-            <ScrollViewer Height="1901">
+
+            <ScrollViewer Height="800">
+
                 <StackPanel Height="auto">
                     <Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">KONFIGURATOR</Label>
                     <Label FontSize="30" VerticalAlignment="Center">1. WYBÓR SILNIKA</Label>
@@ -35,8 +38,10 @@
                     <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
                     <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
 
+
                     <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">elektryczny</Label>
                     <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
+
                     <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
                     <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
 
@@ -46,7 +51,7 @@
                     <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
                     <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
                     <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-                    
+
                     <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">FWD</Label>
                     <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
                     <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
@@ -167,7 +172,9 @@
 
 
 
-                    <Button Content="Zamawiam" Width="70" Height="70" HorizontalAlignment="Center"/>
+
+                    <Button Content="Zamawiam" Width="70" Height="70" Margin="10" Click="Button_Click"/>
+
 
                 </StackPanel>
             </ScrollViewer>
