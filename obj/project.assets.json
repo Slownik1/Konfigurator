@@ -8,19 +8,24 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\donip\\.nuget\\packages\\": {}
+    "C:\\Users\\48697\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\donip\\Source\\Repos\\Konfigurator\\przykład.csproj",
+      "projectUniqueName": "C:\\Users\\48697\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj",
       "projectName": "przykład",
-      "projectPath": "C:\\Users\\donip\\Source\\Repos\\Konfigurator\\przykład.csproj",
-      "packagesPath": "C:\\Users\\donip\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\donip\\Source\\Repos\\Konfigurator\\obj\\",
+      "projectPath": "C:\\Users\\48697\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj",
+      "packagesPath": "C:\\Users\\48697\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\48697\\Source\\Repos\\Slownik1\\Konfigurator\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\donip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\48697\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
