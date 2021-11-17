@@ -5,172 +5,96 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:przykład"
         mc:Ignorable="d"
-        Title="MainWindow" Height="1500" Width="800">
-    <Grid>
+        Title="MainWindow" Height="2000" Width="800">
+	<Grid>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="12*"/>
+			<ColumnDefinition Width="13*"/>
+		</Grid.ColumnDefinitions>
 
 
-        <GroupBox>
-            <ScrollViewer Height="1901">
-                <StackPanel Height="auto">
-                    <Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">KONFIGURATOR</Label>
-                    <Label FontSize="30" VerticalAlignment="Center">1. WYBÓR SILNIKA</Label>
+		<GroupBox Grid.ColumnSpan="2">
+			<ScrollViewer Height="800">
+				<StackPanel Height="auto" RenderTransformOrigin="0.992,0.461">
+					<Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">KONFIGURATOR</Label>
 
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">benzyna 1.6</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
 
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">benzyna 2.0</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
+					<Label Width="700" Height="70" Margin="10" Content="1.SILNIK" FontSize="40"/>
 
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">diesel 1.8</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
+					<ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60">
 
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">diesel 2.0</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
+                        <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
+                        <ComboBoxItem></ComboBoxItem>
+                        <ComboBoxItem></ComboBoxItem>
+                        <ComboBoxItem></ComboBoxItem>
+                        <ComboBoxItem></ComboBoxItem>
 
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">elektryczny</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
+					</ComboBox>
 
-                    <Label Margin="0,50" FontSize="30" VerticalAlignment="Center" Content="2. WYBÓR NAPĘDU"/>
+					<Label Content="OPIS WYPOSAŻENIA I OSIĄGÓW (LISTA)" Margin="10"/>
 
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">AWD</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
+					<Label Width="700" Height="70" Margin="10" Content="2. KOLOR" FontSize="40"/>
+                    <StackPanel Grid.Row="0" Grid.Column="1">
+                        <StackPanel.Resources>
+                            <Style x:Key="Flag" TargetType="RadioButton">
+                                <Style.Triggers>
+                                    <Trigger Property="IsChecked" Value="False">
+                                        <Setter Property="Opacity" Value="0.5"/>
+                                    </Trigger>
+                                </Style.Triggers>
+
+                                <Setter Property="BorderThickness" Value="2"/>
+
+                                <Setter Property="Template">
+                                    <Setter.Value>
+                                        <ControlTemplate TargetType="RadioButton">
+                                            <Border BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                Background="Transparent"
+                                CornerRadius="20">
+                                                <Image Source="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                            </Border>
+                                        </ControlTemplate>
+                                    </Setter.Value>
+                                </Setter>
+                            </Style>
+                        </StackPanel.Resources>
+
+                        <ItemsControl>
+                            <RadioButton Content="../Resources/radio.png" Style="{StaticResource Flag}" BorderBrush="Black" Width="40" Height="40" HorizontalAlignment="Left"/>
+                            <RadioButton Content="../Resources/radio.png" Style="{StaticResource Flag}" BorderBrush="Red" Width="40" Height="40" HorizontalAlignment="Left"/>
+                            <RadioButton Content="../Resources/radio.png" Style="{StaticResource Flag}" BorderBrush="Silver" Width="40" Height="40" HorizontalAlignment="Left"/>
+                            <RadioButton Content="../Resources/radio.png" Style="{StaticResource Flag}" BorderBrush="Gray" Width="40" Height="40" HorizontalAlignment="Left"/>
+                            <RadioButton Content="../Resources/radio.png" Style="{StaticResource Flag}" BorderBrush="Green" Width="40" Height="40" HorizontalAlignment="Left"/>
+                            <RadioButton Content="../Resources/radio.png" Style="{StaticResource Flag}" BorderBrush="Yellow" Width="40" Height="40" HorizontalAlignment="Left"/>
+
+                        </ItemsControl>
+                    </StackPanel>
+                    <Label Width="700" Height="70" Margin="10" Content="3.Opony" FontSize="40"/>
+                    <ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60">
+
+                        <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
+                        <ComboBoxItem ></ComboBoxItem>
+                    </ComboBox>
+                    <Label Width="700" Height="70" Margin="10" Content="4.Dodatki" FontSize="40"/>
+                    <CheckBox Content="Przyciemniane szyby " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Listwy Chromowane " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Relingi dachowe " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Przednia dokładka " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Tylna dokładka" Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Spojler " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <Label Width="700" Height="70" Margin="10" Content="5.Dodatkowe pakiety" FontSize="40"/>
+                    <CheckBox Content="Park Assist " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Navigation " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Power Seat " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+
+                    <Label Width="700" Height="70" Margin="10" Content="Kwota do zapłaty" FontSize="40"/>
+
+                    <Button Content="Zamawiam" Width="70" Height="70" HorizontalAlignment="Center" Click="Button_Click"/>
                     
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">FWD</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="0,50" FontSize="30" VerticalAlignment="Center">3. KOLOR</Label>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">CZARNY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">BIAŁY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">SREBRNY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">SIWY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">ZIELONY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">ŻÓŁTY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">CZERWONY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="0,50" FontSize="30" VerticalAlignment="Center">4. OPONY</Label>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">LETNIE</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">PAKIET LETNIE + ZIMOWE</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="0,50" FontSize="30" VerticalAlignment="Center">5. DODATKI ZEWNĘTRZNE</Label>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">PRZYCIEMNIANE SZYBY</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">LISTWY CHROMOWANE</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">RELINGI</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">PRZEDNIA DOKŁADKA ZEWNĘTRZNA</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">TYLNA DOKŁADKA ZEWNĘTRZNA</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">SPOJLER</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="0,50" FontSize="30" VerticalAlignment="Center">6. TAPICERKA</Label>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">SKÓRZANA</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">EKOSKÓRA</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">MATERIAŁ</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="0,50" FontSize="30" VerticalAlignment="Center">7. DODATKOWE PAKIETY</Label>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">PARK ASSIST</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">NAVIGATION</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-                    <Label Margin="20,10" FontSize="20" VerticalAlignment="Center">POWER SEATS</Label>
-                    <RadioButton Margin="20,10" Content="PAKIET BASIC"/>
-                    <RadioButton Margin="20,10" Content="PAKIET PREMIUM"/>
-                    <RadioButton Margin="20,10" Content="PAKIET ADVANCED"/>
-
-
-
-                    <Button Content="Zamawiam" Width="70" Height="70" HorizontalAlignment="Center"/>
 
                 </StackPanel>
-            </ScrollViewer>
-        </GroupBox>
-    </Grid>
+			</ScrollViewer>
+		</GroupBox>
+	</Grid>
 </Window>
