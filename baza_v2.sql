@@ -79,28 +79,29 @@ INSERT INTO [dbo].[Opcje]
 		   ,[Cena] )
 		   
      VALUES
-	    ('Silnik', 'benzyna 1.6', 'manual, fwd, ekoskóra, pierdupierdu', 70000),
-		('Silnik', 'benzyna 2.0', 'benzyna 2.0 opis', 80000),
-		('Silnik', 'diesel 1.8', 'diesel 1.8 opis', 90000),
-		('Silnik', 'diesel 2.0', 'diesel 2.0 opis', 100000),
-		('Silnik', 'elektryczny', 'elektryczny opis', 110000),
-		('Kolor', 'czarny', 'czarny opis', 0),
-		('Kolor', 'srebrny', 'srebrny opis', 2000),
-		('Kolor', 'szary', 'szary opis', 2000),
-		('Kolor', 'zielony', 'zielony opis', 2000),
-		('Kolor', '¿ó³ty', '¿ó³ty opis', 2000),
-		('Kolor', 'czerwony', 'czerwony opis', 3000),
-		('opony', 'letnie 17''', 'letnie 17'' opis', 3000),
-		('opony', 'letnie 18''', 'letnie 18'' opis', 4000),
-		('dodatki', 'przyciemniane szyby', 'przyciemniane szyby opis', 2000),
-		('dodatki', 'listwy chrom', 'listwy chrom opis', 3000),
-		('dodatki', 'relingi', 'relingi opis', 1000),
-		('dodatki', 'przednia dok³adka zewnêtrzna', 'przednia dok³adka zewnêtrzna opis', 1000),
-		('dodatki', 'tylna dok³adka zewnêtrzna', 'tylna dok³adka zewnêtrzna opis', 1000),
-		('dodatki', 'spojler', 'spojler opis', 2000),
-		('dodatkowe pakiety', 'Park Assist', 'asystent parkowania sam se parkuje super bajer ', 2000),
-		('dodatkowe pakiety', 'Navigation', 'super navi do¿ywotnie mapy super duper ', 3000),
-		('dodatkowe pakiety', 'Power Seats', 'nie wiem co to', 1000)
+	   ('Silnik', 'benzyna 1.6', 'Skrzynia manuala, napêd FWD, zu¿ycie paliwa œrednie: 5.2 l/100 km, œrednia emisja CO2: 115.0 g/km.', 70000),
+('Silnik', 'benzyna 2.0', 'Skrzynia manuala, napêd FWD, zu¿ycie paliwa œrednie: 4.6 l/100 km, œrednia emisja CO2: 119.0 g/km.', 80000),
+('Silnik', 'diesel 1.8', 'Skrzynia manuala, napêd FWD, zu¿ycie paliwa œrednie: 4.3 l/100 km, œrednia emisja CO2: 125.0 g/km.', 90000),
+('Silnik', 'diesel 2.0', 'Skrzynia automatyczna, napêd RWD, zu¿ycie paliwa œrednie: 4.5 l/100 km, œrednia emisja CO2: 127.0 g/km.', 100000),
+('Silnik', 'elektryczny', 'Skrzynia automatyczna, napêd AWD, zu¿ycie pr¹du 15 kWh/100 km', 110000),
+('Kolor', 'czarny', 'Czarny to synonim uniwersalnoœci, a zarazem elegancja', 0),
+('Kolor', 'srebrny', 'Srebrny to synonim dostatku i presti¿u', 2000),
+('Kolor', 'szary', 'Szary to rozwaga i ostro¿noœæ', 2000),
+('Kolor', 'zielony', 'Jeœli przywi¹zujesz wagê do walorów estetycznych ten kolor jest dla Ciebie!', 2000),
+('Kolor', '¿ó³ty', 'Jesteœ ³owc¹ przygód? ¯ó³y to jest to!', 2000),
+('Kolor', 'czerwony', 'Lubisz wyró¿niaæ siê w t³umie? Ten kolor jest idealny dla Ciebie!', 3000),
+('opony', 'letnie 17''', 'Fenomenalna przyczepnoœæ, krótka droga hamowania', 3000),
+('opony', 'letnie 18''', 'Fenomenalna przyczepnoœæ, krótka droga hamowania', 4000),
+('dodatki', 'przyciemniane szyby', 'Przyciemnianie szyb poprawia komfort jazdy, zabezpiecza auto przed nagrzewaniem', 2000),
+('dodatki', 'listwy chrom', 'Chromowane listwy wykonane z polerowanej stali nierdzewnej dodadz¹ elegancji oraz podkreœl¹ wyj¹tkowy charakter Twojego auta', 3000),
+('dodatki', 'relingi', 'Relingi dachowe to element, który znacz¹co u³atwia monta¿ dodatkowego baga¿nika na dachu samochodu', 1000),
+('dodatki', 'przednia dok³adka zewnêtrzna', 'Dok³adka wykonana jest z w³ókna wêglowego i jest w b³yszcz¹cym wykoñczeniu', 1000),
+('dodatki', 'tylna dok³adka zewnêtrzna', 'Dok³adka wykonana jest z w³ókna wêglowego i jest w b³yszcz¹cym wykoñczeniu', 1000),
+('dodatki', 'spojler', 'Zapewniaj¹ oryginalny wygl¹d auta, ale te¿ polepsza jego w³asnoœci aerodynamiczne', 2000),
+('dodatkowe pakiety', 'Park Assist', 'System wspomagaj¹cy parkowanie samochodów, ca³y manewr jest wykonywany automatycznie', 2000),
+('dodatkowe pakiety', 'Navigation', 'Do¿ywotnia aktualizacja map, informacja o parkingach ', 3000),
+('dodatkowe pakiety', 'Power Seats', 'Elektryczna regulacja fotela kierowcy, zapamiêtuje do trzech ustawieñ', 1000)
+
 
 			   
 GO
