@@ -20,7 +20,7 @@
 					<Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">KONFIGURATOR</Label>
 
 
-					<Label Width="700" Height="70" Margin="10" Content="1.SILNIK" FontSize="40"/>
+					<Label Width="700" Height="70" Margin="10" Content="1.Silnik" FontSize="40"/>
 
 					<ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60" Name="SilnikiComboBox">
 
@@ -28,9 +28,9 @@
 
                     </ComboBox>
 
-					<Label Content="OPIS WYPOSAŻENIA I OSIĄGÓW (LISTA)" Margin="10"/>
+					<Label Content="Opis wyposażenia i osiągów (lista)" Margin="10"/>
 
-					<Label Width="700" Height="70" Margin="10" Content="2. KOLOR" FontSize="40"/>
+					<Label Width="700" Height="70" Margin="10" Content="2. Kolor" FontSize="40"/>
                     <StackPanel Grid.Row="0" Grid.Column="1">
                         <StackPanel.Resources>
                             <Style x:Key="Flag" TargetType="RadioButton">
