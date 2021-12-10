@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\48697\\source\\repos\\Slownik1 — kopia\\Konfigurator\\przykład.csproj": {}
+    "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj": {}
   },
   "projects": {
-    "C:\\Users\\48697\\source\\repos\\Slownik1 — kopia\\Konfigurator\\przykład.csproj": {
+    "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\48697\\source\\repos\\Slownik1 — kopia\\Konfigurator\\przykład.csproj",
+        "projectUniqueName": "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj",
         "projectName": "przykład",
-        "projectPath": "C:\\Users\\48697\\source\\repos\\Slownik1 — kopia\\Konfigurator\\przykład.csproj",
-        "packagesPath": "C:\\Users\\48697\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\48697\\source\\repos\\Slownik1 — kopia\\Konfigurator\\obj\\",
+        "projectPath": "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj",
+        "packagesPath": "C:\\Users\\donip\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\48697\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\donip\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
