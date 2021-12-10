@@ -14,26 +14,23 @@
 
 
 		<GroupBox Grid.ColumnSpan="2">
+            
 			<ScrollViewer Height="800">
 				<StackPanel Height="auto" RenderTransformOrigin="0.992,0.461">
 					<Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">KONFIGURATOR</Label>
 
 
-					<Label Width="700" Height="70" Margin="10" Content="1.SILNIK" FontSize="40"/>
+					<Label Width="700" Height="70" Margin="10" Content="1.Silnik" FontSize="40"/>
 
-					<ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60">
+					<ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60" Name="SilnikiComboBox">
 
                         <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
-                        <ComboBoxItem></ComboBoxItem>
-                        <ComboBoxItem></ComboBoxItem>
-                        <ComboBoxItem></ComboBoxItem>
-                        <ComboBoxItem></ComboBoxItem>
 
-					</ComboBox>
+                    </ComboBox>
 
-					<Label Content="OPIS WYPOSAŻENIA I OSIĄGÓW (LISTA)" Margin="10"/>
+					<Label Content="Opis wyposażenia i osiągów (lista)" Margin="10"/>
 
-					<Label Width="700" Height="70" Margin="10" Content="2. KOLOR" FontSize="40"/>
+					<Label Width="700" Height="70" Margin="10" Content="2. Kolor" FontSize="40"/>
                     <StackPanel Grid.Row="0" Grid.Column="1">
                         <StackPanel.Resources>
                             <Style x:Key="Flag" TargetType="RadioButton">
@@ -74,7 +71,8 @@
                     <ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60">
 
                         <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
-                        <ComboBoxItem ></ComboBoxItem>
+                        <ComboBoxItem >letnie 17''</ComboBoxItem>
+                        <ComboBoxItem >letnie 18''</ComboBoxItem>
                     </ComboBox>
                     <Label Width="700" Height="70" Margin="10" Content="4.Dodatki" FontSize="40"/>
                     <CheckBox Content="Przyciemniane szyby " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
