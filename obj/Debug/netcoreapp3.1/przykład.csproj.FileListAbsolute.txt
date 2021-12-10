@@ -81,3 +81,30 @@ C:\Users\48697\source\repos\Slownik1 — kopia\Konfigurator\obj\Debug\netcoreapp
 C:\Users\48697\source\repos\Slownik1 — kopia\Konfigurator\obj\Debug\netcoreapp3.1\przykład.csproj.CoreCompileInputs.cache
 C:\Users\48697\source\repos\Slownik1 — kopia\Konfigurator\obj\Debug\netcoreapp3.1\przykład.csproj.CopyComplete
 C:\Users\48697\source\repos\Slownik1 — kopia\Konfigurator\obj\Debug\netcoreapp3.1\przykład.genruntimeconfig.cache
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\przykład.exe
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\przykład.deps.json
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\przykład.runtimeconfig.json
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\przykład.runtimeconfig.dev.json
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\przykład.dll
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\przykład.pdb
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\donip\Source\Repos\Konfigurator1\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.csprojAssemblyReference.cache
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład_MarkupCompile.cache
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład_MarkupCompile.lref
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.g.resources
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.AssemblyInfoInputs.cache
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.AssemblyInfo.cs
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.csproj.CoreCompileInputs.cache
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.csproj.CopyComplete
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.dll
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.pdb
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\przykład.genruntimeconfig.cache
+C:\Users\donip\Source\Repos\Konfigurator1\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
