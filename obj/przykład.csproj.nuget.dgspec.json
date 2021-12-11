@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj": {}
+    "C:\\Users\\48697\\Desktop\\zwinne - konfigurator\\przykład.csproj": {}
   },
   "projects": {
-    "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj": {
+    "C:\\Users\\48697\\Desktop\\zwinne - konfigurator\\przykład.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj",
+        "projectUniqueName": "C:\\Users\\48697\\Desktop\\zwinne - konfigurator\\przykład.csproj",
         "projectName": "przykład",
-        "projectPath": "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\przykład.csproj",
-        "packagesPath": "C:\\Users\\donip\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donip\\Source\\Repos\\Konfigurator1\\obj\\",
+        "projectPath": "C:\\Users\\48697\\Desktop\\zwinne - konfigurator\\przykład.csproj",
+        "packagesPath": "C:\\Users\\48697\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\48697\\Desktop\\zwinne - konfigurator\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\donip\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\48697\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

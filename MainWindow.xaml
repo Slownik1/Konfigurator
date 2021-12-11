@@ -22,7 +22,7 @@
                    
 
                     
-                    <Label Width="700" Height="70" Margin="10" Content="1.Silnik" FontSize="40"/>
+                    <Label Width="700" Height="70" Margin="10" Content="Silnik" FontSize="40"/>
 
 					<ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60" Name="SilnikiComboBox" SelectionChanged="SilnikiComboBox_SelectionChanged">
 
@@ -30,9 +30,9 @@
 
                     </ComboBox>
 
-					<Label x:Name="OpisLabel" Margin="10"/>
+                    <Label Content="Wybierz silnik" x:Name="OpisLabel" Margin="10"/>
 
-					<Label Width="700" Height="70" Margin="10" Content="2. Kolor" FontSize="40"/>
+					<Label Width="700" Height="70" Margin="10" Content="Kolor" FontSize="40"/>
                     <StackPanel Grid.Row="0" Grid.Column="1">
                         <StackPanel.Resources>
                             <Style x:Key="Flag" TargetType="RadioButton">
@@ -69,13 +69,13 @@
 
                         </ItemsControl>
                     </StackPanel>
-                    <Label Width="700" Height="70" Margin="10" Content="3.Opony" FontSize="40"/>
+                    <Label Width="700" Height="70" Margin="10" Content="Opony" FontSize="40"/>
                     <ComboBox x:Name="OponyComboBox" Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60">
 
                         <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
                        
                     </ComboBox>
-                    <Label Width="700" Height="70" Margin="10" Content="4.Dodatki" FontSize="40"/>
+                    <Label Width="700" Height="70" Margin="10" Content="Dodatki" FontSize="40"/>
                     <ListBox x:Name="DodatkiListBox">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
@@ -89,7 +89,7 @@
                     <CheckBox Content="Przednia dokładka " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
                     <CheckBox Content="Tylna dokładka" Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
                     <CheckBox Content="Spojler " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <Label Width="700" Height="70" Margin="10" Content="5.Dodatkowe pakiety" FontSize="40"/>
+                    <Label Width="700" Height="70" Margin="10" Content="Dodatkowe pakiety" FontSize="40"/>
                     <ListBox x:Name="PakietyListBox">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
