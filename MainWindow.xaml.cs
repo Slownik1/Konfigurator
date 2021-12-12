@@ -1,4 +1,5 @@
 ﻿using System;
+using MahApps.Metro.Controls;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,7 +21,7 @@ namespace przykład
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainWindow 
     {
         DataTable dataTable = new DataTable();
         List<Wersja> wersja = new List<Wersja>();
@@ -31,7 +32,7 @@ namespace przykład
             InitializeComponent();
             wersja.Add(new Wersja { Opis = "domyślne" });
             string connetionString;
-            connetionString = @"Data Source=DESKTOP-U1A6KEO\SQLEXPRESS;Initial Catalog=Konfigurator_moj;Integrated Security=SSPI;";
+            connetionString = @"Data Source=DESKTOP-U1A6KEO\SQLEXPRESS;Initial Catalog=konfigurator;Integrated Security=SSPI;";
             string query = "select * from Opcje";
 
             SqlConnection conn = new SqlConnection(connetionString);
@@ -55,30 +56,7 @@ namespace przykład
                 opcja.Cena = Convert.ToDecimal(dataTable.Rows[i]["Cena"]);
                 opcje.Add(opcja);
             }
-            /*InitializeComponent();
 
-
-            string Wersja = "select * from Wersja";
-
-
-            SqlCommand cmdWersja = new SqlCommand(Wersja, conn);
-            conn.Open();
-
-            SqlDataAdapter daWersja = new SqlDataAdapter(cmdWersja);
-            da.Fill(dataTable);
-            conn.Close();
-            da.Dispose();
-
-
-            for (int i = 0; i < dataTable.Rows.Count; i++)
-            {
-                Wersja wersje = new Wersja();
-                wersje.Opis = dataTable.Rows[i]["Opis"].ToString();
-                wersje.Id = Convert.ToInt32(dataTable.Rows[i]["Id"].ToString());
-                wersja.Add(wersje);
-            }
-           */
-            {
 
                 foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
                 {
@@ -91,6 +69,11 @@ namespace przykład
                 foreach (var opcja in opcje.Where(o => o.Kategoria == "5"))
                 {
                     DodatkiListBox.Items.Add($"{opcja.Nazwa}");
+
+                }
+                foreach (var opcja in opcje.Where(o => o.Kategoria == "7"))
+                {
+                    PakietyListBox.Items.Add($"{opcja.Nazwa}");
                 }
 
                 //foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
@@ -99,8 +82,6 @@ namespace przykład
 
                 //    OpisLabel.Content = opcja.Opis;
                 //}
-
-            }
 
         }
 

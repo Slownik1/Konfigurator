@@ -79,7 +79,7 @@
                     <ListBox x:Name="DodatkiListBox">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
-                                <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding TheText}"/>
+                                <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding DodatkiListBox.Items.toString}"/>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
@@ -97,7 +97,7 @@
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <CheckBox Content="Park Assist " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
+                    <CheckBox Content="Park Assist " Margin="10" Width="200" Height="40" HorizontalAlignment="Left" />
                     <CheckBox Content="Navigation " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
                     <CheckBox Content="Power Seat " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
 

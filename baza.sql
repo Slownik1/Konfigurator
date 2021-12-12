@@ -1,26 +1,26 @@
 USE [master]
 GO
-/****** Object:  Database [konfigurator_moj]    Script Date: 09.10.2021 12:01:02 ******/
-CREATE DATABASE [konfigurator_moj]
+/****** Object:  Database [konfigurator]    Script Date: 09.10.2021 12:01:02 ******/
+CREATE DATABASE [konfigurator]
  CONTAINMENT = NONE
  ON  PRIMARY 
-( NAME = N'konfigurator_moj', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\konfigurator_moj.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
+( NAME = N'konfigurator', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\konfigurator.mdf' , SIZE = 8192KB , MAXSIZE = UNLIMITED, FILEGROWTH = 65536KB )
  LOG ON 
-( NAME = N'konfigurator_moj_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\konfigurator_moj_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
+( NAME = N'konfigurator_log', FILENAME = N'C:\Program Files\Microsoft SQL Server\MSSQL15.SQLEXPRESS\MSSQL\DATA\konfigurator_log.ldf' , SIZE = 8192KB , MAXSIZE = 2048GB , FILEGROWTH = 65536KB )
  WITH CATALOG_COLLATION = DATABASE_DEFAULT
 GO
-ALTER DATABASE [konfigurator_moj] SET COMPATIBILITY_LEVEL = 150
+ALTER DATABASE [konfigurator] SET COMPATIBILITY_LEVEL = 150
 GO
 IF (1 = FULLTEXTSERVICEPROPERTY('IsFullTextInstalled'))
 begin
-EXEC [konfigurator_moj].[dbo].[sp_fulltext_database] @action = 'enable'
+EXEC [konfigurator].[dbo].[sp_fulltext_database] @action = 'enable'
 end
 GO
-EXEC sys.sp_db_vardecimal_storage_format N'konfigurator_moj', N'ON'
+EXEC sys.sp_db_vardecimal_storage_format N'konfigurator', N'ON'
 GO
-ALTER DATABASE [konfigurator_moj] SET QUERY_STORE = OFF
+ALTER DATABASE [konfigurator] SET QUERY_STORE = OFF
 GO
-USE [konfigurator_moj]
+USE [konfigurator]
 GO
 CREATE TABLE [dbo].[Opcje](
 	[Id] [int] IDENTITY(1,1) NOT NULL,
@@ -55,13 +55,13 @@ GO
 
 USE [master]
 GO
-ALTER DATABASE [konfigurator_moj] SET  READ_WRITE 
+ALTER DATABASE [konfigurator] SET  READ_WRITE 
 GO
 
 
 
 --PRZYK£ADOWE DANE:
-USE [konfigurator_moj]
+USE [konfigurator]
 GO
 
 INSERT INTO [dbo].[Wersja]
