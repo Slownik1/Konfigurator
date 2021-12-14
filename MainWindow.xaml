@@ -5,100 +5,85 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:przykład"
         mc:Ignorable="d"
-        Title="MainWindow" Width="600" Height="1000">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="12*"/>
-            <ColumnDefinition Width="13*"/>
-        </Grid.ColumnDefinitions>
+        Title="MainWindow" Width="450" Height="850">
+    <Grid Height="808" VerticalAlignment="Top">
+        <ScrollViewer Height="796" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,10,0,0">
+            <StackPanel Height="auto" RenderTransformOrigin="0.992,0.461">
+                <Image Height="100" Width="100" Source="/logo.jpg"/>
+                <Label FontSize="35" HorizontalAlignment="Center" VerticalAlignment="Center" Content="Wybierz swojego Carbon-a" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
+                <Label  Margin="10" Content="Silnik" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
 
+                <ComboBox Width="400" HorizontalAlignment="Center" Height="60" Name="SilnikiComboBox" SelectionChanged="SilnikiComboBox_SelectionChanged" Margin="10,0,10,0">
 
-        <GroupBox Grid.ColumnSpan="2">
+                    <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
 
-            <ScrollViewer Height="796" HorizontalAlignment="Center" VerticalAlignment="Center">
-                <StackPanel Height="auto" RenderTransformOrigin="0.992,0.461">
-                    <Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Content="KONFIGURATOR"/>
+                </ComboBox>
 
+                <Label Content="" x:Name="OpisLabel" Margin="10" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
 
+                <Label Margin="10" Content="Kolor" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed" />
+                <StackPanel Grid.Row="0" Grid.Column="1">
+                    <StackPanel.Resources>
+                        <Style x:Key="Flag" TargetType="RadioButton">
+                            <Style.Triggers>
+                                <Trigger Property="IsChecked" Value="False">
+                                    <Setter Property="Opacity" Value="0.5"/>
+                                </Trigger>
+                            </Style.Triggers>
 
+                            <Setter Property="BorderThickness" Value="2"/>
 
-                    <Label  Margin="10" Content="Silnik" FontSize="40"/>
-
-                    <ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60" Name="SilnikiComboBox" SelectionChanged="SilnikiComboBox_SelectionChanged">
-
-                        <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
-
-                    </ComboBox>
-
-                    <Label Content="" x:Name="OpisLabel" Margin="10"/>
-
-                    <Label Margin="10" Content="Kolor" FontSize="40"/>
-                    <StackPanel Grid.Row="0" Grid.Column="1">
-                        <StackPanel.Resources>
-                            <Style x:Key="Flag" TargetType="RadioButton">
-                                <Style.Triggers>
-                                    <Trigger Property="IsChecked" Value="False">
-                                        <Setter Property="Opacity" Value="0.5"/>
-                                    </Trigger>
-                                </Style.Triggers>
-
-                                <Setter Property="BorderThickness" Value="2"/>
-
-                                <Setter Property="Template">
-                                    <Setter.Value>
-                                        <ControlTemplate TargetType="RadioButton">
-                                            <Border BorderThickness="{TemplateBinding BorderThickness}"
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="RadioButton">
+                                        <Border BorderThickness="{TemplateBinding BorderThickness}"
                                 BorderBrush="{TemplateBinding BorderBrush}"
                                 Background="Transparent"
                                 CornerRadius="20">
-                                                <Image Source="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"/>
-                                            </Border>
-                                        </ControlTemplate>
-                                    </Setter.Value>
-                                </Setter>
-                            </Style>
-                        </StackPanel.Resources>
+                                            <Image Source="{Binding Path=Content, RelativeSource={RelativeSource TemplatedParent}}"/>
+                                        </Border>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </StackPanel.Resources>
 
-                        <ItemsControl>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Black" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Red" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Silver" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Gray" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Green" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Yellow" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                        </ItemsControl>
-                    </StackPanel>
-                    <Label Margin="10" Content="Opony" FontSize="40"/>
-                    <ComboBox x:Name="OponyComboBox" Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60">
-
-                        <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
-
-                    </ComboBox>
-                    <Label Margin="10" Content="Dodatki" FontSize="40"/>
-                    <ListBox x:Name="DodatkiListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding DodatkiListBox.Items.toString}"/>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-                    <Label Margin="10" Content="Dodatkowe pakiety" FontSize="40"/>
-                    <ListBox x:Name="PakietyListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
-                        <ListBox.ItemTemplate>
-                            <DataTemplate>
-                                <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding TheText}"/>
-                            </DataTemplate>
-                        </ListBox.ItemTemplate>
-                    </ListBox>
-
-                    <Label Margin="10" Content="Kwota do zapłaty" FontSize="40"/>
-
-                    <Button Content="Zamawiam" Width="70" Height="70" HorizontalAlignment="Center"/>
-
-
-
+                    <ItemsControl>
+                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Black" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Red" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Silver" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Gray" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Green" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Yellow" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                    </ItemsControl>
                 </StackPanel>
-            </ScrollViewer>
-        </GroupBox>
+                <Label Margin="10" Content="Opony" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
+                <ComboBox x:Name="OponyComboBox" Width="400" HorizontalAlignment="Center" Height="60" Margin="10,0,10,0">
+
+                    <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
+
+                </ComboBox>
+                <Label Margin="10" Content="Dodatki" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
+                <ListBox x:Name="DodatkiListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding DodatkiListBox.Items.toString}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+                <Label Margin="10" Content="Dodatkowe pakiety" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
+                <ListBox x:Name="PakietyListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <ListBox.ItemTemplate>
+                        <DataTemplate>
+                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding TheText}"/>
+                        </DataTemplate>
+                    </ListBox.ItemTemplate>
+                </ListBox>
+
+                <Label Margin="10" Content="Kwota do zapłaty" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
+
+                <Button Content="Zamawiam" Width="70" Height="70" HorizontalAlignment="Center" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
+            </StackPanel>
+        </ScrollViewer>
     </Grid>
 </Window>
