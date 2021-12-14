@@ -15,7 +15,7 @@
 
         <GroupBox Grid.ColumnSpan="2">
 
-            <ScrollViewer Height="800" Margin="12,0,-12,0">
+            <ScrollViewer Height="796" HorizontalAlignment="Center" VerticalAlignment="Center">
                 <StackPanel Height="auto" RenderTransformOrigin="0.992,0.461">
                     <Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Content="KONFIGURATOR"/>
 
@@ -30,7 +30,7 @@
 
                     </ComboBox>
 
-                    <Label Content="Wybierz silnik" x:Name="OpisLabel" Margin="10"/>
+                    <Label Content="" x:Name="OpisLabel" Margin="10"/>
 
                     <Label Margin="10" Content="Kolor" FontSize="40"/>
                     <StackPanel Grid.Row="0" Grid.Column="1">
@@ -60,13 +60,12 @@
                         </StackPanel.Resources>
 
                         <ItemsControl>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Black" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Red" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Silver" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Gray" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Green" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left"/>
-                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Yellow" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left"/>
-
+                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Black" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Red" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Silver" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Gray" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Green" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                            <RadioButton  Style="{StaticResource Flag}" BorderBrush="Yellow" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
                         </ItemsControl>
                     </StackPanel>
                     <Label Margin="10" Content="Opony" FontSize="40"/>
