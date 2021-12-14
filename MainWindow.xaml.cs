@@ -21,7 +21,7 @@ namespace przykład
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
-    public partial class MainWindow 
+    public partial class MainWindow
     {
         DataTable dataTable = new DataTable();
         List<Wersja> wersja = new List<Wersja>();
@@ -32,7 +32,7 @@ namespace przykład
             InitializeComponent();
             wersja.Add(new Wersja { Opis = "domyślne" });
             string connetionString;
-            connetionString = @"Data Source=DESKTOP-U1A6KEO\SQLEXPRESS;Initial Catalog=konfigurator;Integrated Security=SSPI;";
+            connetionString = @"Data Source=localhost;Initial Catalog=konfigurator;Integrated Security=SSPI;";
             string query = "select * from Opcje";
 
             SqlConnection conn = new SqlConnection(connetionString);
@@ -44,7 +44,7 @@ namespace przykład
             conn.Close();
             da.Dispose();
 
-            
+
             for (int i = 0; i < dataTable.Rows.Count; i++)
             {
                 Opcja opcja = new Opcja();
@@ -58,30 +58,30 @@ namespace przykład
             }
 
 
-                foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
-                {
-                    SilnikiComboBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}");
-                }
-                foreach (var opcja in opcje.Where(o => o.Kategoria == "4"))
-                {
-                    OponyComboBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}");
-                }
-                foreach (var opcja in opcje.Where(o => o.Kategoria == "5"))
-                {
-                    DodatkiListBox.Items.Add($"{opcja.Nazwa}");
+            foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
+            {
+                SilnikiComboBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}");
+            }
+            foreach (var opcja in opcje.Where(o => o.Kategoria == "4"))
+            {
+                OponyComboBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}");
+            }
+            foreach (var opcja in opcje.Where(o => o.Kategoria == "5"))
+            {
+                DodatkiListBox.Items.Add($"{opcja.Nazwa}");
 
-                }
-                foreach (var opcja in opcje.Where(o => o.Kategoria == "7"))
-                {
-                    PakietyListBox.Items.Add($"{opcja.Nazwa}");
-                }
+            }
+            foreach (var opcja in opcje.Where(o => o.Kategoria == "7"))
+            {
+                PakietyListBox.Items.Add($"{opcja.Nazwa}");
+            }
 
-                //foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
-                //{
-                //    //OpisLabel.Content = from o in opcje where o.Kategoria == "1" && o.Nazwa == SilnikiComboBox.SelectedValue.ToString() select "1";
+            //foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
+            //{
+            //    //OpisLabel.Content = from o in opcje where o.Kategoria == "1" && o.Nazwa == SilnikiComboBox.SelectedValue.ToString() select "1";
 
-                //    OpisLabel.Content = opcja.Opis;
-                //}
+            //    OpisLabel.Content = opcja.Opis;
+            //}
 
         }
 
@@ -101,19 +101,19 @@ namespace przykład
             public string Opis { get; set; }
         }
 
-         private void SilnikiComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
-         {
+        private void SilnikiComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
             //if (wersja.Where(w => w.Opis == SilnikiComboBox.SelectedValue.ToString()) != null)
             //{
             //   wersja.Where(w => w.Opis == SilnikiComboBox.SelectedValue.ToString()).FirstOrDefault().Opis;
             //}
 
-             foreach (var opcja in opcje.Where(o => o.Nazwa+ " - " + o.Cena == SilnikiComboBox.SelectedValue.ToString()))
-                {
-                    //OpisLabel.Content = from o in opcje where o.Kategoria == "1" && o.Nazwa == SilnikiComboBox.SelectedValue.ToString() select "1";
+            foreach (var opcja in opcje.Where(o => o.Nazwa + " - " + o.Cena == SilnikiComboBox.SelectedValue.ToString()))
+            {
+                //OpisLabel.Content = from o in opcje where o.Kategoria == "1" && o.Nazwa == SilnikiComboBox.SelectedValue.ToString() select "1";
 
-                    OpisLabel.Content = opcja.Opis;
-                }
+                OpisLabel.Content = opcja.Opis;
+            }
         }
 
     }

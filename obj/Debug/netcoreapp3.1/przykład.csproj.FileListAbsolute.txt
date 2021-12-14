@@ -139,3 +139,35 @@ C:\Users\48697\Desktop\zwinne - konfigurator\bin\Debug\netcoreapp3.1\MahApps.Met
 C:\Users\48697\Desktop\zwinne - konfigurator\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
 C:\Users\48697\Desktop\zwinne - konfigurator\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Users\48697\Desktop\zwinne - konfigurator\bin\Debug\netcoreapp3.1\de\MahApps.Metro.resources.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\przykład.exe
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\przykład.deps.json
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\przykład.runtimeconfig.json
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\przykład.runtimeconfig.dev.json
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\przykład.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\przykład.pdb
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\ControlzEx.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\MahApps.Metro.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\de\MahApps.Metro.resources.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\Konfigurator Auta - zwinne\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.csproj.AssemblyReference.cache
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\App.g.cs
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład_MarkupCompile.cache
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład_MarkupCompile.lref
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\MainWindow.baml
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.g.resources
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.GeneratedMSBuildEditorConfig.editorconfig
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.AssemblyInfoInputs.cache
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.AssemblyInfo.cs
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.csproj.CoreCompileInputs.cache
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.csproj.CopyComplete
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.dll
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.pdb
+H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.genruntimeconfig.cache

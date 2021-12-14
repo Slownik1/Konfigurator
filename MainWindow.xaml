@@ -5,26 +5,26 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:przykład"
         mc:Ignorable="d"
-        Title="MainWindow" Height="2000" Width="800">
-	<Grid>
-		<Grid.ColumnDefinitions>
-			<ColumnDefinition Width="12*"/>
-			<ColumnDefinition Width="13*"/>
-		</Grid.ColumnDefinitions>
+        Title="MainWindow" Width="600" Height="1000">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
 
 
-		<GroupBox Grid.ColumnSpan="2">
-            
-			<ScrollViewer Height="800" Margin="12,0,-12,0">
-				<StackPanel Height="auto" RenderTransformOrigin="0.992,0.461">
-					<Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center">KONFIGURATOR</Label>
+        <GroupBox Grid.ColumnSpan="2">
 
-                   
+            <ScrollViewer Height="800" Margin="12,0,-12,0">
+                <StackPanel Height="auto" RenderTransformOrigin="0.992,0.461">
+                    <Label FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center" Content="KONFIGURATOR"/>
 
-                    
-                    <Label Width="700" Height="70" Margin="10" Content="Silnik" FontSize="40"/>
 
-					<ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60" Name="SilnikiComboBox" SelectionChanged="SilnikiComboBox_SelectionChanged">
+
+
+                    <Label  Margin="10" Content="Silnik" FontSize="40"/>
+
+                    <ComboBox Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60" Name="SilnikiComboBox" SelectionChanged="SilnikiComboBox_SelectionChanged">
 
                         <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
 
@@ -32,7 +32,7 @@
 
                     <Label Content="Wybierz silnik" x:Name="OpisLabel" Margin="10"/>
 
-					<Label Width="700" Height="70" Margin="10" Content="Kolor" FontSize="40"/>
+                    <Label Margin="10" Content="Kolor" FontSize="40"/>
                     <StackPanel Grid.Row="0" Grid.Column="1">
                         <StackPanel.Resources>
                             <Style x:Key="Flag" TargetType="RadioButton">
@@ -69,46 +69,37 @@
 
                         </ItemsControl>
                     </StackPanel>
-                    <Label Width="700" Height="70" Margin="10" Content="Opony" FontSize="40"/>
+                    <Label Margin="10" Content="Opony" FontSize="40"/>
                     <ComboBox x:Name="OponyComboBox" Width="400" HorizontalAlignment="Left" Margin="100,30" Height="60">
 
                         <ComboBoxItem IsSelected="True">Wybierz z listy</ComboBoxItem>
-                       
+
                     </ComboBox>
-                    <Label Width="700" Height="70" Margin="10" Content="Dodatki" FontSize="40"/>
-                    <ListBox x:Name="DodatkiListBox">
+                    <Label Margin="10" Content="Dodatki" FontSize="40"/>
+                    <ListBox x:Name="DodatkiListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding DodatkiListBox.Items.toString}"/>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <CheckBox Content="Przyciemniane szyby " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <CheckBox Content="Listwy Chromowane " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <CheckBox Content="Relingi dachowe " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <CheckBox Content="Przednia dokładka " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <CheckBox Content="Tylna dokładka" Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <CheckBox Content="Spojler " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <Label Width="700" Height="70" Margin="10" Content="Dodatkowe pakiety" FontSize="40"/>
-                    <ListBox x:Name="PakietyListBox">
+                    <Label Margin="10" Content="Dodatkowe pakiety" FontSize="40"/>
+                    <ListBox x:Name="PakietyListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
                         <ListBox.ItemTemplate>
                             <DataTemplate>
                                 <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding TheText}"/>
                             </DataTemplate>
                         </ListBox.ItemTemplate>
                     </ListBox>
-                    <CheckBox Content="Park Assist " Margin="10" Width="200" Height="40" HorizontalAlignment="Left" />
-                    <CheckBox Content="Navigation " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
-                    <CheckBox Content="Power Seat " Margin="10" Width="200" Height="40" HorizontalAlignment="Left"/>
 
-                    <Label Width="700" Height="70" Margin="10" Content="Kwota do zapłaty" FontSize="40"/>
+                    <Label Margin="10" Content="Kwota do zapłaty" FontSize="40"/>
 
                     <Button Content="Zamawiam" Width="70" Height="70" HorizontalAlignment="Center"/>
-                    
+
 
 
                 </StackPanel>
-			</ScrollViewer>
-		</GroupBox>
-	</Grid>
+            </ScrollViewer>
+        </GroupBox>
+    </Grid>
 </Window>
