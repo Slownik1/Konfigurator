@@ -171,3 +171,34 @@ H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.csproj.CopyCompl
 H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.dll
 H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.pdb
 H:\Konfigurator Auta - zwinne\obj\Debug\netcoreapp3.1\przykład.genruntimeconfig.cache
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\przykład.exe
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\przykład.deps.json
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\przykład.runtimeconfig.json
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\przykład.runtimeconfig.dev.json
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\przykład.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\przykład.pdb
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\ControlzEx.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\MahApps.Metro.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\Microsoft.Xaml.Behaviors.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\System.Text.Json.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\de\MahApps.Metro.resources.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.csprojAssemblyReference.cache
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład_MarkupCompile.cache
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład_MarkupCompile.lref
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.g.resources
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.AssemblyInfoInputs.cache
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.AssemblyInfo.cs
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.csproj.CoreCompileInputs.cache
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.csproj.CopyComplete
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.dll
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.pdb
+C:\Users\48697\Desktop\zwinne konfigurator 2\obj\Debug\netcoreapp3.1\przykład.genruntimeconfig.cache

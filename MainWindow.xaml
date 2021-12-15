@@ -67,7 +67,7 @@
                 <ListBox x:Name="DodatkiListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding DodatkiListBox.Items.toString}"/>
+                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding}"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
@@ -75,7 +75,7 @@
                 <ListBox x:Name="PakietyListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
-                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding TheText}"/>
+                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding}"/>
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>

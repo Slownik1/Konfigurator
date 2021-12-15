@@ -32,7 +32,7 @@ namespace przykład
             InitializeComponent();
             wersja.Add(new Wersja { Opis = "domyślne" });
             string connetionString;
-            connetionString = @"Data Source=localhost;Initial Catalog=konfigurator;Integrated Security=SSPI;";
+            connetionString = @"Data Source=DESKTOP-U1A6KEO\SQLEXPRESS;Initial Catalog=konfigurator;Integrated Security=SSPI;";
             string query = "select * from Opcje";
 
             SqlConnection conn = new SqlConnection(connetionString);
