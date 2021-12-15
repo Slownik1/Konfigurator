@@ -68,12 +68,12 @@ namespace przykład
             }
             foreach (var opcja in opcje.Where(o => o.Kategoria == "5"))
             {
-                DodatkiListBox.Items.Add($"{opcja.Nazwa}");
+                DodatkiListBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}");
 
             }
             foreach (var opcja in opcje.Where(o => o.Kategoria == "7"))
             {
-                PakietyListBox.Items.Add($"{opcja.Nazwa}");
+                PakietyListBox.Items.Add($"{opcja.Nazwa}- {opcja.Cena}"); 
             }
 
             //foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
