@@ -32,7 +32,7 @@ namespace przykład
             InitializeComponent();
             wersja.Add(new Wersja { Opis = "domyślne" });
             string connetionString;
-            connetionString = @"Data Source=DESKTOP-U1A6KEO\SQLEXPRESS;Initial Catalog=konfigurator;Integrated Security=SSPI;";
+            connetionString = @"Data Source=localhost;Initial Catalog=konfigurator;Integrated Security=SSPI;";
             string query = "select * from Opcje";
 
             SqlConnection conn = new SqlConnection(connetionString);
@@ -69,11 +69,16 @@ namespace przykład
             foreach (var opcja in opcje.Where(o => o.Kategoria == "5"))
             {
                 DodatkiListBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}");
-
             }
             foreach (var opcja in opcje.Where(o => o.Kategoria == "7"))
             {
-                PakietyListBox.Items.Add($"{opcja.Nazwa}- {opcja.Cena}"); 
+                PakietyListBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}"); 
+            }
+            foreach (var opcja in opcje.Where(o => o.Kategoria == "3"))
+            {
+                KoloryLista.Items.Add(new Label { Content = opcja.Cena, Margin = new Thickness(20, 0, 0, 5) });
+                KoloryLista.Items.Add(new RadioButton { BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(opcja.Nazwa)),
+                    BorderThickness=new Thickness(10) ,HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(20, 0, 0, 5) });
             }
 
             //foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))

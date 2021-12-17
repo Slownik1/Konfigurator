@@ -48,13 +48,7 @@
                         </Style>
                     </StackPanel.Resources>
 
-                    <ItemsControl>
-                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Black" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Red" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Silver" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Gray" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Green" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
-                        <RadioButton  Style="{StaticResource Flag}" BorderBrush="Yellow" Width="40" Height="40" BorderThickness="20" HorizontalAlignment="Left" Margin="20,0,0,5"/>
+                    <ItemsControl x:Name="KoloryLista">
                     </ItemsControl>
                 </StackPanel>
                 <Label Margin="10" Content="Opony" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
