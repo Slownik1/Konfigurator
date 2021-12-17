@@ -15,6 +15,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.Data;
 using System.Data.SqlClient;
+using System.Text.RegularExpressions;
 
 namespace przykład
 {
@@ -72,13 +73,18 @@ namespace przykład
             }
             foreach (var opcja in opcje.Where(o => o.Kategoria == "7"))
             {
-                PakietyListBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}"); 
+                PakietyListBox.Items.Add($"{opcja.Nazwa} - {opcja.Cena}");
             }
             foreach (var opcja in opcje.Where(o => o.Kategoria == "3"))
             {
-                KoloryLista.Items.Add(new Label { Content = opcja.Cena, Margin = new Thickness(20, 0, 0, 5) });
-                KoloryLista.Items.Add(new RadioButton { BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(opcja.Nazwa)),
-                    BorderThickness=new Thickness(10) ,HorizontalAlignment = HorizontalAlignment.Left, Margin = new Thickness(20, 0, 0, 5) });
+                KoloryLista.Items.Add(new Label { Content = $"{opcja.Cena} - {opcja.Opis}", Margin = new Thickness(20, 0, 0, 5) });
+                KoloryLista.Items.Add(new RadioButton
+                {
+                    BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(opcja.Nazwa)),
+                    BorderThickness = new Thickness(10),
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    Margin = new Thickness(20, 0, 0, 5)
+                });
             }
 
             //foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
@@ -121,6 +127,30 @@ namespace przykład
             }
         }
 
-    }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int cena = 0;
+            try
+            {
+                cena += OdczytajCene(SilnikiComboBox.SelectedItem.ToString());
+                cena += OdczytajCene(OponyComboBox.SelectedItem.ToString());
+                foreach(var dodatek in DodatkiListBox.SelectedItems)
+                    cena += OdczytajCene(dodatek.ToString());
+                foreach (var pakiet in PakietyListBox.SelectedItems)
+                    cena += OdczytajCene(pakiet.ToString());
 
+                MessageBox.Show($"Cena ostateczna za Twojego Carbon-a to {cena} zł");
+            }
+            catch
+            {
+                MessageBox.Show("Formularz nie jest uzupełniony");
+            }
+        }
+
+        private int OdczytajCene(string opcja)
+        {
+            var cena = opcja.Split("-").Last();
+            return Convert.ToInt32(cena);
+        }
+    }
 }
