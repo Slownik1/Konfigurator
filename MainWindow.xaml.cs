@@ -34,7 +34,7 @@ namespace przykład
             InitializeComponent();
             wersja.Add(new Wersja { Opis = "domyślne" });
             string connetionString;
-            connetionString = @"Data Source=DESKTOP-U1A6KEO\SQLEXPRESS;Initial Catalog=konfigurator;Integrated Security=SSPI;";
+            connetionString = @"Data Source=localhost;Initial Catalog=konfigurator;Integrated Security=SSPI;";
             string query = "select * from Opcje";
 
             SqlConnection conn = new SqlConnection(connetionString);
@@ -52,7 +52,6 @@ namespace przykład
                 Opcja opcja = new Opcja();
                 opcja.Nazwa = dataTable.Rows[i]["Nazwa"].ToString();
                 opcja.Opis = dataTable.Rows[i]["Opis"].ToString();
-                // opcja.Rodzaj = dataTable.Rows[i]["Rodzaj"].ToString();
                 opcja.Kategoria = dataTable.Rows[i]["Kategoria"].ToString();
 
                 opcja.Cena = Convert.ToDecimal(dataTable.Rows[i]["Cena"]);
@@ -78,23 +77,16 @@ namespace przykład
             }
             foreach (var opcja in opcje.Where(o => o.Kategoria == "3"))
             {
-                KoloryLista.Items.Add(new Label { Content = $"{opcja.Cena} - {opcja.Opis}", Margin = new Thickness(20, 0, 0, 5) });
                 KoloryLista.Items.Add(new RadioButton
                 {
                     BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(opcja.Nazwa)),
                     BorderThickness = new Thickness(10),
                     HorizontalAlignment = HorizontalAlignment.Left,
-                    Margin = new Thickness(20, 0, 0, 5)
+                    VerticalAlignment = VerticalAlignment.Center,
+                    Margin = new Thickness(0, 0, 0, 0),
+                    Content = $"{opcja.Opis} - {opcja.Cena}"
                 });
             }
-
-            //foreach (var opcja in opcje.Where(o => o.Kategoria == "1"))
-            //{
-            //    //OpisLabel.Content = from o in opcje where o.Kategoria == "1" && o.Nazwa == SilnikiComboBox.SelectedValue.ToString() select "1";
-
-            //    OpisLabel.Content = opcja.Opis;
-            //}
-
         }
 
         class Opcja
@@ -115,15 +107,8 @@ namespace przykład
 
         private void SilnikiComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            //if (wersja.Where(w => w.Opis == SilnikiComboBox.SelectedValue.ToString()) != null)
-            //{
-            //   wersja.Where(w => w.Opis == SilnikiComboBox.SelectedValue.ToString()).FirstOrDefault().Opis;
-            //}
-
             foreach (var opcja in opcje.Where(o => o.Nazwa + " - " + o.Cena == SilnikiComboBox.SelectedValue.ToString()))
             {
-                //OpisLabel.Content = from o in opcje where o.Kategoria == "1" && o.Nazwa == SilnikiComboBox.SelectedValue.ToString() select "1";
-
                 OpisLabel.Content = opcja.Opis;
             }
         }
@@ -139,6 +124,7 @@ namespace przykład
                     cena += OdczytajCene(dodatek.ToString());
                 foreach (var pakiet in PakietyListBox.SelectedItems)
                     cena += OdczytajCene(pakiet.ToString());
+                cena += OdczytajCene(((RadioButton)KoloryLista.SelectedItem).Content.ToString());
 
                 MessageBox.Show($"Cena ostateczna za Twojego Carbon-a to {cena} zł");
             }
