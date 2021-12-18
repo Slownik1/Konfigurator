@@ -55,20 +55,10 @@
 
                 </ComboBox>
                 <Label Margin="10" Content="Dodatki" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
-                <ListBox x:Name="DodatkiListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding}"/>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
+                <ListBox x:Name="DodatkiListBox" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionMode="Multiple">
                 </ListBox>
                 <Label Margin="10" Content="Dodatkowe pakiety" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
-                <ListBox x:Name="PakietyListBox" HorizontalAlignment="Center" VerticalAlignment="Center">
-                    <ListBox.ItemTemplate>
-                        <DataTemplate>
-                            <CheckBox IsChecked="{Binding IsSelected}" Content="{Binding}"/>
-                        </DataTemplate>
-                    </ListBox.ItemTemplate>
+                <ListBox x:Name="PakietyListBox" HorizontalAlignment="Center" VerticalAlignment="Center" SelectionMode="Multiple">
                 </ListBox>
 
                 <Label Margin="10" Content="Kwota do zapłaty" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"/>
