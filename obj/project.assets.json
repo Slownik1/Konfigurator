@@ -193,6 +193,16 @@
         "runtime": {
           "lib/netcoreapp3.0/System.Text.Json.dll": {}
         }
+      },
+      "Email_Sender/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Email_Sender.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Email_Sender.dll": {}
+        }
       }
     }
   },
@@ -626,34 +636,35 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Email_Sender/1.0.0": {
+      "type": "project",
+      "path": "../Email_Sender/Email_Sender.csproj",
+      "msbuildProject": "../Email_Sender/Email_Sender.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
+      "Email_Sender >= 1.0.0",
       "MahApps.Metro >= 2.4.9",
       "MahApps.Metro.Resources >= 0.6.1",
       "System.Data.SqlClient >= 4.8.3"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Tomasz\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\dawid\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "H:\\Konfigurator Auta - zwinne\\przykład.csproj",
+      "projectUniqueName": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj",
       "projectName": "przykład",
-      "projectPath": "H:\\Konfigurator Auta - zwinne\\przykład.csproj",
-      "packagesPath": "C:\\Users\\Tomasz\\.nuget\\packages\\",
-      "outputPath": "H:\\Konfigurator Auta - zwinne\\obj\\",
+      "projectPath": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj",
+      "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Tomasz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -666,7 +677,11 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Email_Sender\\Email_Sender.csproj": {
+              "projectPath": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Email_Sender\\Email_Sender.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -710,7 +725,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

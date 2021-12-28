@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "H:\\Konfigurator Auta - zwinne\\przykład.csproj": {}
+    "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj": {}
   },
   "projects": {
-    "H:\\Konfigurator Auta - zwinne\\przykład.csproj": {
+    "C:\\Users\\dawid\\source\\repos\\Slownik1\\Email_Sender\\Email_Sender.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\Konfigurator Auta - zwinne\\przykład.csproj",
-        "projectName": "przykład",
-        "projectPath": "H:\\Konfigurator Auta - zwinne\\przykład.csproj",
-        "packagesPath": "C:\\Users\\Tomasz\\.nuget\\packages\\",
-        "outputPath": "H:\\Konfigurator Auta - zwinne\\obj\\",
+        "projectUniqueName": "C:\\Users\\dawid\\source\\repos\\Slownik1\\Email_Sender\\Email_Sender.csproj",
+        "projectName": "Email_Sender",
+        "projectPath": "C:\\Users\\dawid\\source\\repos\\Slownik1\\Email_Sender\\Email_Sender.csproj",
+        "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dawid\\source\\repos\\Slownik1\\Email_Sender\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\Tomasz\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -32,6 +28,64 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj",
+        "projectName": "przykład",
+        "projectPath": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\przykład.csproj",
+        "packagesPath": "C:\\Users\\dawid\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Konfigurator\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dawid\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Email_Sender\\Email_Sender.csproj": {
+                "projectPath": "C:\\Users\\dawid\\Source\\Repos\\Slownik1\\Email_Sender\\Email_Sender.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -75,7 +129,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

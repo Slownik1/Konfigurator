@@ -17,6 +17,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Email_Sender\Email_Sender.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Resource Include="logo.jpg" />
   </ItemGroup>
 

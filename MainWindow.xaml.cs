@@ -34,7 +34,7 @@ namespace przykład
             InitializeComponent();
             wersja.Add(new Wersja { Opis = "domyślne" });
             string connetionString;
-            connetionString = @"Data Source=localhost;Initial Catalog=konfigurator;Integrated Security=SSPI;";
+            connetionString = @"Data Source=localhost;Initial Catalog=konfigurator_moj;Integrated Security=SSPI;";
             string query = "select * from Opcje";
 
             SqlConnection conn = new SqlConnection(connetionString);
@@ -77,15 +77,15 @@ namespace przykład
             }
             foreach (var opcja in opcje.Where(o => o.Kategoria == "3"))
             {
-                KoloryLista.Items.Add(new RadioButton
-                {
-                    BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(opcja.Nazwa)),
-                    BorderThickness = new Thickness(10),
-                    HorizontalAlignment = HorizontalAlignment.Left,
-                    VerticalAlignment = VerticalAlignment.Center,
-                    Margin = new Thickness(0, 0, 0, 0),
-                    Content = $"{opcja.Opis} - {opcja.Cena}"
-                });
+                //KoloryLista.Items.Add(new RadioButton
+                //{
+                //    BorderBrush = new SolidColorBrush((Color)ColorConverter.ConvertFromString(opcja.Nazwa)),
+                //    BorderThickness = new Thickness(10),
+                //    HorizontalAlignment = HorizontalAlignment.Left,
+                //    VerticalAlignment = VerticalAlignment.Center,
+                //    Margin = new Thickness(0, 0, 0, 0),
+                //    Content = $"{opcja.Opis} - {opcja.Cena}"
+                //});
             }
         }
 
@@ -132,6 +132,8 @@ namespace przykład
             {
                 MessageBox.Show("Formularz nie jest uzupełniony");
             }
+
+            //var email = new Email(new EmialParams)
         }
 
         private int OdczytajCene(string opcja)
@@ -139,5 +141,8 @@ namespace przykład
             var cena = opcja.Split("-").Last();
             return Convert.ToInt32(cena);
         }
+
+        
+
     }
 }
